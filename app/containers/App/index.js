@@ -13,6 +13,11 @@
 
 import React from 'react';
 
+import Header from 'components/Header';
+
+
+import styles from './styles.css';
+
 export default class App extends React.Component { // eslint-disable-line react/prefer-stateless-function
 
     static propTypes = {
@@ -21,9 +26,13 @@ export default class App extends React.Component { // eslint-disable-line react/
 
     render() {
         return (
-            <div>
-                {this.props.children}
-            </div>
+            <main>
+                <Header />
+
+                <div>
+                    {this.props.children}
+                </div>
+            </main>
         );
     }
 }

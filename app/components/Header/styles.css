@@ -1,0 +1,12 @@
+.header {
+    display: flex;
+    padding: 1em 15vw;
+    margin: 0 0 3em;;
+    background: rgba(0, 0, 0, 0.5);
+    list-style-type: none;
+}
+
+li {
+    flex: 1;
+    text-align: center;
+}
