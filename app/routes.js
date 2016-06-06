@@ -33,7 +33,17 @@ export default function createRoutes() {
 
                 importModules.catch(errorLoading);
             },
-        }, {
+        },
+        {
+            path: '/about',
+            name: 'about',
+            getComponent(nextState, cb) {
+                System.import('containers/About')
+                .then(loadModule(cb))
+                .catch(errorLoading);
+            }
+        },
+        {
             path: '*',
             name: 'notfound',
             getComponent(nextState, cb) {

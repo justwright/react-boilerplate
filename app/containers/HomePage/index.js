@@ -16,7 +16,7 @@ export default class HomePage extends React.Component { // eslint-disable-line r
     render() {
         return (
             <div>
-                <h1>This is the Homepage!</h1>
+                <h1>Home</h1>
             </div>
         );
     }
